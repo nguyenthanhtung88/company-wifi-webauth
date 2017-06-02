@@ -1,10 +1,3 @@
-<html>
-<head>
-
-<meta http-equiv="Pragma" content="no-cache"> <meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
-<title>Welcome to Your_Company_Name_Here</title>
-
-<script>
 function submitAction(){
       var link = document.location.href;
       var searchString = "redirect=";
@@ -23,8 +16,8 @@ function submitAction(){
               var value = pairs[i].substring(pos+1);
               args[argname] = unescape(value);
           }
-          document.forms[0].action = args.switch_url;       
-      }       
+          document.forms[0].action = args.switch_url;
+      }
       if(equalIndex >= 0) {
             equalIndex += searchString.length;
             redirectUrl = "";
@@ -74,28 +67,3 @@ function loadAction(){
         alert("The User Name and Password combination you have entered is invalid.  Please try again.");
      }
 }
-
-</script>
-
-</head>
-
-<body bgcolor=#FFEECC topmargin="50" marginheight="50" onload="loadAction();"> <form method="post"> <input TYPE="hidden" NAME="buttonClicked" SIZE="16" MAXLENGTH="15" value="0"> <input TYPE="hidden" NAME="redirect_url" SIZE="255" MAXLENGTH="255" VALUE=""> <input TYPE="hidden" NAME="err_flag" SIZE="16" MAXLENGTH="15" value="0">
-
-<table border="0" cellspacing="0" cellpadding="0" > <tr> <td></td></tr>
-<h1 align=center><font color="#336699">Welcome to Your_Company_Here</font></h1>
-<h2 align=center><font color="#336699">This is an externally-hosted page, but authentication takes place on the WLC itself</font></h2>
-<iframe src="./aup.html" width="800" height="500" scrolling="auto"></iframe>
-<h3 align=center><font color="#000000">Please enter your username/password</font></h3>
-<h4 align=center><font color="#000000">Username<input type="TEXT" name="username" SIZE="25" MAXLENGTH="63" VALUE=""></font></h4>
-<h4 align=center><font color="#000000">Password<input type="Password" name="password" SIZE="25" MAXLENGTH="63" VALUE=""></font></h4>
-<h4 align=center><font size="5" color="#000000"><input type="button" name="Submit" value="I Agree with Policy Above" class="button" onclick="submitAction();"></h4></font><p></p>
-<IMG SRC="./yourlogo.jpg" align=bottom>
-<p>
-For assistance, please contact the lobby administrator at 555-1212 (lobby.admin@company.com)</p>
-</td>
-</tr>
-</table> 
-</div>
-</form>
-</body>
-</html>
