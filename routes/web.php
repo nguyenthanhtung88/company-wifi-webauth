@@ -16,6 +16,6 @@ Route::get('login.html', 'HomeController@index');
 
 Auth::routes();
 
-Route::resource('setting', 'SettingController', ['only' => [
-    'index', 'update'
-]]);
+Route::get('setting', 'SettingController@index');
+Route::post('setting/update', 'SettingController@update');
+Route::get('setting/preview/{templateNumber}', 'SettingController@preview');
