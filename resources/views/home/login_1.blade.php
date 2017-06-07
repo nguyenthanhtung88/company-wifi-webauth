@@ -24,7 +24,7 @@
         	width: 100%;
         	height:100%;
         	font-family: 'Open Sans', sans-serif;
-            background: url('/storage/images/bg_vision.jpg');
+            background: url('/images/bg_vision.jpg');
             background-size: cover;
             background-attachment: fixed;
         }
@@ -67,7 +67,7 @@
 @section('content')
     <div class="login">
         <div class="logo">
-            <img src="{{ asset('storage/images/framgia-logo-white.png') }}">
+            <img src="{{ asset('images/framgia-logo-white.png') }}">
         </div>
         <h1>{{ trans('app.welcome') }}</h1>
 

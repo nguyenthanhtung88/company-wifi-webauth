@@ -27,7 +27,7 @@ body {
   margin: 0;
   overflow-y:auto !important;
   overflow-x:hidden !important;
-  background: url('/storage/images/banner.jpg');
+  background: url('/images/banner.jpg');
   background-size: cover;
   background-attachment: fixed;
 }

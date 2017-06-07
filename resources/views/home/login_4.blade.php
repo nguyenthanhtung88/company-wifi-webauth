@@ -7,7 +7,7 @@
 @section('content')
     <div class="login">
         <div class="login-header">
-            <img src="{{ asset('storage/images/framgia-logo-white.png') }}" alt="">
+            <img src="{{ asset('images/framgia-logo-white.png') }}" alt="">
             <h1>{{ trans('app.welcome') }}</h1>
         </div>
         <div class="login-form">

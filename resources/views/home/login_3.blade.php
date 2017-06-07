@@ -6,7 +6,7 @@
 
 @section('content')
     <hgroup>
-        <img src="{{ asset('storage/images/framgia-logo-white.png') }}" alt="">
+        <img src="{{ asset('images/framgia-logo-white.png') }}" alt="">
         <h1>{{ trans('app.welcome') }}</h1>
     </hgroup>
 

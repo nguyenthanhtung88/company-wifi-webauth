@@ -17,7 +17,7 @@
     <div class="container">
         <div id="login">
             <div class="logo">
-                <img src="{{ asset('storage/images/framgia-logo-white.png') }}">
+                <img src="{{ asset('images/framgia-logo-white.png') }}">
                 <h1>{{ trans('app.welcome') }}</h1>
             </div>
             <form method="post">
