@@ -24,7 +24,7 @@
         	width: 100%;
         	height:100%;
         	font-family: 'Open Sans', sans-serif;
-            background: url('/images/bg_vision.jpg');
+            background: url('images/bg_vision.jpg');
             background-size: cover;
             background-attachment: fixed;
         }

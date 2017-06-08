@@ -1,9 +1,8 @@
 body {
-    /*background:url('/images/banner.jpg');*/
     margin:0px;
     font-family: 'Ubuntu', sans-serif;
     /*background-size: 100% 110%;*/
-    background: url('/images/bg_out-activity.png');
+    background: url('images/bg_out-activity.png');
     background-size: cover;
     background-attachment: fixed;
 }
