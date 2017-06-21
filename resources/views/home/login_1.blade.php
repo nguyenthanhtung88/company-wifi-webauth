@@ -29,11 +29,9 @@
             background-attachment: fixed;
         }
         .login {
-        	position: absolute;
-        	top: 50%;
-        	left: 50%;
-        	margin: -150px 0 0 -150px;
-        	height:300px;
+        	width: 400px;
+            max-width: 90%;
+            margin: 5% auto;
         }
         .login h1 { color: #fff; text-shadow: 0 0 10px rgba(0,0,0,0.3); letter-spacing:1px; text-align:center; }
         .login .logo {text-align: center;}
@@ -58,6 +56,41 @@
         	transition: box-shadow .5s ease;
         }
         input:focus { box-shadow: inset 0 -5px 45px rgba(100,100,100,0.4), 0 1px 1px rgba(255,255,255,0.2); }
+        hr {
+            margin: 20px 0;
+        }
+        .branches {
+            text-align: justify;
+        }
+        .address {
+            color: #fff;
+        }
+        .country {
+            font-size: 1.3em;
+        }
+        .branch-location {
+            width: 100%;
+        }
+        .location-icon {
+            float: left;
+            height: 20px;
+            margin-right: 10px;
+        }
+        .location-icon img {
+            width: 16px;
+            vertical-align: middle;
+        }
+        .location-detail {
+            font-size: 0.8em;
+            color: lightgrey;
+        }
+        .branch-name {
+            margin: 5px 0;
+            font-size: 1em;
+        }
+        .clearfix {
+            clear: both;
+        }
 
     </style>
 
@@ -80,5 +113,7 @@
             <input type="password" name="password" maxlength="63" value="" placeholder="Password" required="required"/>
             <input type="button" name="Submit" value="Login" class="btn btn-primary btn-block btn-large" onclick="submitAction();"/>
         </form>
+
+        @include('home._company_address')
     </div>
 @endsection
