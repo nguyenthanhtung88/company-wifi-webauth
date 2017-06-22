@@ -5,7 +5,7 @@
 
     <div class="branch-location">
         <div class="location-icon">
-            <img src="{{ asset('images/location_symbol.png') }}"/>
+            <img src="{{ asset('images/location_symbol.png', true) }}"/>
         </div>
 
         <div class="location-detail">

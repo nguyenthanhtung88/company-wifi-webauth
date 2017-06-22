@@ -1,7 +1,7 @@
 @extends('layouts.front')
 
 @section('head')
-    <link rel="stylesheet" href="{{ asset('css/login_2.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/login_2.css', true) }}">
 @endsection
 
 @section('content')
@@ -17,7 +17,7 @@
     <div class="container">
         <div id="login">
             <div class="logo">
-                <img src="{{ asset('images/framgia-logo-white.png') }}">
+                <img src="{{ asset('images/framgia-logo-white.png', true) }}">
                 <h1>{{ trans('app.welcome') }}</h1>
             </div>
             <form method="post">

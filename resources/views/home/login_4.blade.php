@@ -1,13 +1,13 @@
 @extends('layouts.front')
 
 @section('head')
-    <link rel="stylesheet" href="{{ asset('css/login_4.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/login_4.css', true) }}">
 @endsection
 
 @section('content')
     <div class="login">
         <div class="login-header">
-            <img src="{{ asset('images/framgia-logo-white.png') }}" alt="">
+            <img src="{{ asset('images/framgia-logo-white.png', true) }}" alt="">
             <h1>{{ trans('app.welcome') }}</h1>
         </div>
         <div class="login-form">

@@ -1,12 +1,12 @@
 @extends('layouts.front')
 
 @section('head')
-    <link rel="stylesheet" href="{{ asset('css/login_3.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/login_3.css', true) }}">
 @endsection
 
 @section('content')
     <hgroup>
-        <img src="{{ asset('images/framgia-logo-white.png') }}" alt="">
+        <img src="{{ asset('images/framgia-logo-white.png', true) }}" alt="">
         <h1>{{ trans('app.welcome') }}</h1>
     </hgroup>
 
@@ -32,6 +32,6 @@
         <input type="button" name="Submit" value="Login" class="button buttonBlue" onclick="submitAction();"/>
     </form>
 
-    <script src="{{ asset('js/jquery.min.js') }}"></script>
-    <script src="{{ asset('js/login_3.js') }}"></script>
+    <script src="{{ asset('js/jquery.min.js', true) }}"></script>
+    <script src="{{ asset('js/login_3.js', true) }}"></script>
 @endsection

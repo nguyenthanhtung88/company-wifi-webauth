@@ -6,7 +6,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
         <title>Welcome to Framgia Wifi</title>
 
-        <script type="text/javascript" src="{{ asset('js/login.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('js/login.js', true) }}"></script>
 
         @yield('head')
     </head>

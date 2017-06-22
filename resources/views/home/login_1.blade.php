@@ -1,7 +1,7 @@
 @extends('layouts.front')
 
 @section('head')
-    <link rel="stylesheet" href="{{ asset('css/normalize.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/normalize.min.css', true) }}">
 
     <style>
         /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
@@ -94,13 +94,13 @@
 
     </style>
 
-    <script src="{{ asset('js/prefixfree.min.js') }}"></script>
+    <script src="{{ asset('js/prefixfree.min.js', true) }}"></script>
 @endsection
 
 @section('content')
     <div class="login">
         <div class="logo">
-            <img src="{{ asset('images/framgia-logo-white.png') }}">
+            <img src="{{ asset('images/framgia-logo-white.png', true) }}">
         </div>
         <h1>{{ trans('app.welcome') }}</h1>
 
