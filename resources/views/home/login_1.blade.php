@@ -31,7 +31,7 @@
         .login {
         	width: 400px;
             max-width: 90%;
-            margin: 5% auto;
+            margin: 10% auto;
         }
         .login h1 { color: #fff; text-shadow: 0 0 10px rgba(0,0,0,0.3); letter-spacing:1px; text-align:center; }
         .login .logo {text-align: center;}
@@ -113,7 +113,5 @@
             <input type="password" name="password" maxlength="63" value="" placeholder="Password" required="required"/>
             <input type="button" name="Submit" value="Login" class="btn btn-primary btn-block btn-large" onclick="submitAction();"/>
         </form>
-
-        @include('home._company_address')
     </div>
 @endsection
